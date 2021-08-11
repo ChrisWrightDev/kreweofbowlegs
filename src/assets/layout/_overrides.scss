@@ -1,1 +1,32 @@
 //Suggested location to add your overrides so that migration would be easy by just updating the SASS folder in the future
+
+.homepage {
+    position: relative;
+    overflow: hidden;
+}
+
+/* You could use :after - it doesn't really matter */
+.homepage:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    opacity: 0.05;
+    background: url("/assets/images/flag.gif") no-repeat 0 0;
+    -ms-background-size: contain;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.bgsecondarycolor {
+    background-color: $bodyBgSecondaryColor;
+}
+
+// Theming support for each year
+

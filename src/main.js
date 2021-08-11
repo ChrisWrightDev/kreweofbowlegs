@@ -107,6 +107,8 @@ const app = createApp(App);
 
 app.config.globalProperties.$appState = reactive({ inputStyle: 'outlined' });
 
+console.log(app.config);
+
 app.use(PrimeVue, { ripple: true });
 app.use(ConfirmationService);
 app.use(ToastService);

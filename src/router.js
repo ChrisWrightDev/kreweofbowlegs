@@ -160,9 +160,79 @@ const routes = [
         component: () => import('./components/EmptyPage.vue'),
     },
     {
+        path: '/test',
+        name: 'test',
+        component: () => import('./pages/Test.vue'),
+    },
+    {
+        path: '/home',
+        name: 'home',
+        component: () => import('./pages/Landing.vue'),
+    },
+    {
+        path: '/add-user',
+        name: 'add-user',
+        component: () => import('./pages/AddUser.vue'),
+    },
+    {
+        path: '/members/profile/:id',
+        name: 'update-profile',
+        component: () => import('./pages/UpdateUser.vue'),
+    },
+    {
         path: '/documentation',
         name: 'documentation',
         component: () => import('./components/Documentation.vue'),
+    },
+    {
+        path: '/capt-billy',
+        name: 'capt-billy',
+        component: () => import('./pages/CaptBilly.vue'),
+    },
+    {
+        path: '/billy-bowlegs-festival',
+        name: 'billy-bowlegs-festival',
+        component: () => import('./pages/BillyBowlegsFestival.vue'),
+    },
+    {
+        path: '/aboutthekrewe',
+        name: 'aboutthekrewe',
+        component: () => import('./pages/AboutTheKrewe.vue'),
+    },
+    {
+        path: '/treasurecoins',
+        name: 'treasurecoins',
+        component: () => import('./pages/BowlegsTreasureCoins.vue'),
+    },
+    {
+        path: '/historicvideos',
+        name: 'historicvideos',
+        component: () => import('./pages/HistoricVideos.vue'),
+    },
+    {
+        path: '/coronationprograms',
+        name: 'coronationprograms',
+        component: () => import('./pages/CoronationPrograms.vue'),
+    },
+    {
+        path: '/historicpamphlets',
+        name: 'historicpamphlets',
+        component: () => import('./pages/HistoricPamphlets.vue'),
+    },
+    {
+        path: '/krewehistory',
+        name: 'krewehistory',
+        component: () => import('./pages/KreweHistory.vue'),
+    },
+    {
+        path: '/societyofbowlegs',
+        name: 'societyofbowlegs',
+        component: () => import('./pages/SocietyofBowlegs.vue'),
+    },
+    {
+        path: '/williamaugustusbowles',
+        name: 'williamaugustusbowles',
+        component: () => import('./pages/WilliamAugustusBowles.vue'),
     },
 ];
 
