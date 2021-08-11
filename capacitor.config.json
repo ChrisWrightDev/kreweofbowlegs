@@ -1,6 +1,6 @@
 {
   "appId": "com.kreweofbowlegs.app",
   "appName": "KreweofBowlegs",
-  "webDir": "dist",
+  "webDir": "www",
   "bundledWebRuntime": false
 }
