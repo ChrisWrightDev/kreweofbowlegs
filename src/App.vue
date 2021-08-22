@@ -107,6 +107,11 @@
                         ]
                     },
                     {
+                        label: 'Login',
+                        icon: 'pi pi-fw pi-user',
+                        to: '/login'
+                    },
+                    {
                         label: 'Add User',
                         icon: 'pi pi-fw pi-user',
                         to: '/add-user'

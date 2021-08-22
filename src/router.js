@@ -234,6 +234,25 @@ const routes = [
         name: 'williamaugustusbowles',
         component: () => import('./pages/WilliamAugustusBowles.vue'),
     },
+    {
+        path: '/login',
+        name: 'login',
+        component: () => import('./components/Login.vue'),
+    },
+    {
+        path: '/members/profile',
+        name: 'profile',
+        component: () => import('./pages/UpdateUser.vue'),
+    },
+    {
+        path: '/members/test',
+        name: 'login test',
+        component: () => import('./pages/UpdateUser.vue'),
+        meta: {
+            can: 'member',
+            onDeniedRoute: '/login'
+        }
+    }
 ];
 
 const router = createRouter({
