@@ -335,9 +335,11 @@ export default {
 		}
 	},
 	async created() {
-		const response = await API.getUserByID(this.$route.params.id);
-		if (response) this.user = response;
-		console.log(response);
+		if (this.$route?.params?.id) {
+			const response = await API.getUserByID(this.$route.params.id);
+			if (response) this.user = response;
+			console.log(response);
+		}
 		this.$toast.add({severity:'info', summary:'Success',detail:'Information Saved', life: 3000});
 	},
 	methods: {
