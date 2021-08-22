@@ -31,6 +31,7 @@
 		"sass-loader": "^8.0.2"
 	},
 	"dependencies": {
+		"@capacitor/android": "^3.2.0",
 		"@capacitor/core": "^3.1.2",
 		"@capacitor/ios": "^3.1.2",
 		"@fullcalendar/core": "4.0.2",
